@@ -6,13 +6,11 @@
 /out-tsc
 bin/
 obj/
+*.pubxml
+*.user
 
 # dependencies
 /node_modules
-
-#publish
-.pubxml
-.user
 
 # IDEs and editors
 /.idea
