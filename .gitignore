@@ -7,7 +7,7 @@
 bin/
 obj/
 *.pubxml
-*.user
+*.pubxml.user
 
 # dependencies
 /node_modules
