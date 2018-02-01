@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyServiceAPI", "PropertyServiceAPI\PropertyServiceAPI.csproj", "{63F792BF-856F-4252-B9C4-FFC6CAD6F72E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSCAppEssentials", "DSCAppEssentials\DSCAppEssentials.csproj", "{0A91CB58-7999-489A-BDEE-91F81016DD4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyService.Domain", "PropertyService.Domain\PropertyService.Domain.csproj", "{D94F42E1-C96F-4540-AE00-F4472E5C2A7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63F792BF-856F-4252-B9C4-FFC6CAD6F72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F792BF-856F-4252-B9C4-FFC6CAD6F72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F792BF-856F-4252-B9C4-FFC6CAD6F72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F792BF-856F-4252-B9C4-FFC6CAD6F72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A91CB58-7999-489A-BDEE-91F81016DD4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A91CB58-7999-489A-BDEE-91F81016DD4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A91CB58-7999-489A-BDEE-91F81016DD4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A91CB58-7999-489A-BDEE-91F81016DD4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D94F42E1-C96F-4540-AE00-F4472E5C2A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94F42E1-C96F-4540-AE00-F4472E5C2A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94F42E1-C96F-4540-AE00-F4472E5C2A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94F42E1-C96F-4540-AE00-F4472E5C2A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA6BD70C-2B37-4906-B694-81BDBDB02CF8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dsasu.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PropertyServiceAPI\\PropertyServiceAPI.csproj
+		SccProjectName1 = PropertyServiceAPI
+		SccLocalPath1 = PropertyServiceAPI
+		SccProjectUniqueName2 = DSCAppEssentials\\DSCAppEssentials.csproj
+		SccProjectName2 = DSCAppEssentials
+		SccLocalPath2 = DSCAppEssentials
+		SccProjectUniqueName3 = PropertyService.Domain\\PropertyService.Domain.csproj
+		SccProjectName3 = PropertyService.Domain
+		SccLocalPath3 = PropertyService.Domain
+	EndGlobalSection
+EndGlobal
