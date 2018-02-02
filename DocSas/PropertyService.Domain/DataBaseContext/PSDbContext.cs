@@ -52,6 +52,7 @@ namespace PropertyService.Domain.DataBaseContext
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<ServiceApiKey> ServiceApiKeys { get; set; }
         public DbSet<NotificationViewTrack> NotificationViewTracks { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
 
         //Procedures
         public DbSet<CommentCardVM> CommentCardVMS { get; set; }
