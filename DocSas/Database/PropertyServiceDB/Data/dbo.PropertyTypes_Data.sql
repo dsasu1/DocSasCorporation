@@ -1,0 +1,1 @@
+INSERT INTO [dbo].[PropertyTypes] ([Id], [Title], [IsValid], [ModifiedDateUtc], [AddedDateUtc], [PropertyTypeEnum]) VALUES ('d96cd702-d84d-43e7-807d-2193adb90591', N'Apartment', 1, '2017-10-17 12:49:22.113', '2017-10-17 12:49:22.113', N'Apartment')

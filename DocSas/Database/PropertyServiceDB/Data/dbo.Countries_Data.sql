@@ -1,0 +1,1 @@
+INSERT INTO [dbo].[Countries] ([Id], [Code], [Title], [ContinentCode], [IsValid], [IsLookupEnabled], [IsSupportCounty], [IsSupportProvince], [IsSupportZip], [ModifiedDateUtc], [AddedDateUtc]) VALUES ('a9396436-78db-49e9-9887-fa95bc67ff2e', N'US', N'United States', NULL, 1, 1, 1, 1, 1, '2017-10-10 15:25:34.623', '2017-10-10 15:25:34.623')
