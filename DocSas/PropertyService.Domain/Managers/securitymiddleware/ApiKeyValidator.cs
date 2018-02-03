@@ -39,10 +39,11 @@ namespace PropertyService.Domain.Managers.securitymiddleware
                 if (key != Guid.Empty)
                 {
                     var appName = context.Request.Headers[AppNameKey];
+                    var appHeaderOrigin = context.Request.Headers["Origin"];
                     var serviceKeyData = await serviceApiRepo.GetSingleAsync(x => x.Id == key && x.IsValid);
 
-                    if (serviceKeyData !=  null && serviceKeyData.AppName.Equals(appName, StringComparison.OrdinalIgnoreCase))
-                    {
+                    if (serviceKeyData !=  null && serviceKeyData.AppName.Equals(appName, StringComparison.OrdinalIgnoreCase) && (string.IsNullOrEmpty(serviceKeyData.AppDomainUrl) || serviceKeyData.AppDomainUrl.Equals(appHeaderOrigin, StringComparison.OrdinalIgnoreCase)))
+                    {                
                         await _next.Invoke(context);
                         return;
                     }
