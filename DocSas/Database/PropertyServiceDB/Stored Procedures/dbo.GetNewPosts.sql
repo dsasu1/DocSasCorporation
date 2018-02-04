@@ -37,7 +37,7 @@ BEGIN
      ELSE
 	  BEGIN
 	       SELECT TOP(@p0)  NEWS.Id,
-	       US.FirstName + ' ' + LEFT(ISNULL(US.LastName,''),1) AS UserName,  US.UserTypeEnum,
+	       US.FirstName + ' ' + ISNULL(US.LastName,'') AS UserName,  US.UserTypeEnum,
 		   US.PhotoThumbnail AS UserPhoto,
 	   NEWS.Details, NEWS.AddedDateUtc, NEWS.PropertyInformationId , NEWS.UserId , NEWS.Likes , NEWS.Unlikes, NEWS.ShareWithEnum  
 	   FROM NewsPosts AS NEWS (NOLOCK) INNER JOIN
