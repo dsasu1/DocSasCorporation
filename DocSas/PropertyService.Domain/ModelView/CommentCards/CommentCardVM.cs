@@ -14,7 +14,7 @@ namespace PropertyService.Domain.ModelView
         public string Comment { get; set; }
         public Guid PropertyInformationId { get; set; }
         public bool IsAnonymous { get; set; }
-        public byte[] UserPhoto { get; set; }
+        public string UserPhoto { get; set; }
         public Guid Id { get; set; }
         public string UserName { get; set; }
         public DateTime AddedDateUtc { get; set; }
