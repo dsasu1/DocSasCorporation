@@ -19,6 +19,7 @@ namespace PropertyService.Domain.ModelView
     {
         private readonly IPSRepository<Notification> _notificationRepo;
         private readonly IPSRepository<NotificationViewTrack> _notificationTrackRepo;
+        private readonly IPSRepository<NotificationPushSubscription> _notificationSubRepo;
         private readonly IMapper _mapper;
         private readonly IAppCommon _appCommon;
 
@@ -28,12 +29,13 @@ namespace PropertyService.Domain.ModelView
         /// <param name="notificationRepo">The notification repo.</param>
         /// <param name="mapper">The mapper.</param>
         /// <param name="appCommon">The application common.</param>
-        public NotificationProvider(IPSRepository<Notification> notificationRepo, IPSRepository<NotificationViewTrack> notificationTrackRepo,  IMapper mapper, IAppCommon appCommon)
+        public NotificationProvider(IPSRepository<Notification> notificationRepo, IPSRepository<NotificationViewTrack> notificationTrackRepo, IPSRepository<NotificationPushSubscription> notificationSubRepo, IMapper mapper, IAppCommon appCommon)
         {
             _notificationRepo = notificationRepo;
             _mapper = mapper;
             _appCommon = appCommon;
             _notificationTrackRepo = notificationTrackRepo;
+            _notificationSubRepo = notificationSubRepo;
         }
 
         /// <summary>
@@ -110,12 +112,25 @@ namespace PropertyService.Domain.ModelView
         }
 
         /// <summary>
-        /// Gets the notification tracks asynchronous.
+        /// SaveNotificationSubAsync
         /// </summary>
-        /// <param name="userId">The user identifier.</param>
-        /// <param name="propertyId">The property identifier.</param>
-        /// <returns>Task&lt;NotificationViewTrack&gt;.</returns>
-        private async Task<NotificationViewTrack> GetNotificationTracksAsync(Guid userId, Guid propertyId)
+        /// <param name="notificationPush"></param>
+        /// <returns></returns>
+        public async Task<DSCResponse> SaveNotificationSubAsync(NotificationPushVM notificationPush)
+        {
+            var msg = new Dictionary<string, string>();
+            var response = new DSCResponse();
+
+            return response;
+        }
+
+            /// <summary>
+            /// Gets the notification tracks asynchronous.
+            /// </summary>
+            /// <param name="userId">The user identifier.</param>
+            /// <param name="propertyId">The property identifier.</param>
+            /// <returns>Task&lt;NotificationViewTrack&gt;.</returns>
+            private async Task<NotificationViewTrack> GetNotificationTracksAsync(Guid userId, Guid propertyId)
         {
             return await _notificationTrackRepo.GetSingleAsync(x => x.UserId == userId && x.PropertyInformationId.Value == propertyId);
         }

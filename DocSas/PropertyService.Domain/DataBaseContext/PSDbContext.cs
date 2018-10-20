@@ -53,6 +53,7 @@ namespace PropertyService.Domain.DataBaseContext
         public DbSet<ServiceApiKey> ServiceApiKeys { get; set; }
         public DbSet<NotificationViewTrack> NotificationViewTracks { get; set; }
         public DbSet<Notification> Notifications { get; set; }
+        public DbSet<NotificationPushSubscription> NotificationPushSubscriptions { get; set; }
 
         //Procedures
         public DbSet<CommentCardVM> CommentCardVMS { get; set; }

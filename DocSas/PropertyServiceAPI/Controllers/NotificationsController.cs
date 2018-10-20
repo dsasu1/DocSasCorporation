@@ -41,5 +41,25 @@ namespace PropertyServiceAPI.Controllers
 
             return BadRequest(ModelState);
         }
+
+        [HttpGet]
+        [ProducesResponseType(typeof(bool), (int)DSCHttpStatus.OK)]
+        [Route("PostNotificationSubscription")]
+        public async Task<IActionResult> PostNotificationSubscription(NotificationPushVM notificationPushVM)
+        {
+            if (ModelState.IsValid)
+            {
+                var response = await _notifyProvider.SaveNotificationSubAsync(notificationPushVM);
+
+                if (response.IsSuccess)
+                {
+                    return Ok(response.ResponseData);
+                }
+
+                return BadRequest(response.ErrorMessage);
+            }
+
+            return BadRequest(ModelState);
+        }
     }
 }

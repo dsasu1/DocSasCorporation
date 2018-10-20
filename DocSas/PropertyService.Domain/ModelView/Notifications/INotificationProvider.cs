@@ -19,5 +19,12 @@ namespace PropertyService.Domain.ModelView
         /// <param name="isMainPageView">if set to <c>true</c> [is main page view].</param>
         /// <returns>Task&lt;DSCResponse&gt;.</returns>
         Task<DSCResponse> GetNotificationsAsync(Guid userId, Guid propertyId, bool isMainPageView = false);
+
+        /// <summary>
+        /// SaveNotificationSubAsync
+        /// </summary>
+        /// <param name="notificationPush"></param>
+        /// <returns></returns>
+        Task<DSCResponse> SaveNotificationSubAsync(NotificationPushVM notificationPush);
     }
 }
